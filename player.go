@@ -18,15 +18,15 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 package theislercon
 
 type Player struct {
-	ID       string // Steam or EOS ID
-	Name     string
-	Location Location
-	Class    Class
-	Growth   int8 // Growth as percentage. 75% means fully grown in the current game version.
-	Health   int8 // Health as percentage
-	Stamina  int8 // Stamina as percentage
-	Hunger   int8 // Hunger as percentage
-	Thirst   int8 // Thirst as percentage
+	ID        string // Steam or EOS ID
+	Name      string
+	Location  Location
+	DinoClass DinoClass
+	Growth    int8 // Growth as percentage. 75% means fully grown in the current game version.
+	Health    int8 // Health as percentage
+	Stamina   int8 // Stamina as percentage
+	Hunger    int8 // Hunger as percentage
+	Thirst    int8 // Thirst as percentage
 }
 
 type Location struct {

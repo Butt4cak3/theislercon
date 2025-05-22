@@ -169,7 +169,7 @@ func parsePlayerDataMessage(message string) ([]Player, error) {
 
 		class = class[3 : len(class)-2]
 
-		player := Player{playerId, name, Location{x, y, z}, Class(class), growth, health, stamina, hunger, thirst}
+		player := Player{playerId, name, Location{x, y, z}, DinoClass(class), growth, health, stamina, hunger, thirst}
 		result = append(result, player)
 	}
 

@@ -166,7 +166,7 @@ func (client *Client) WipeCorpses() error {
 }
 
 // UpdatePlayables defines the list of playable classes.
-func (client *Client) UpdatePlayables(classes []Class) error {
+func (client *Client) UpdatePlayables(classes []DinoClass) error {
 	classNames := make([]string, len(classes))
 	for i, class := range classes {
 		classNames[i] = string(class)

@@ -19,32 +19,32 @@ package theislercon
 
 // Classes are the different types of dinosaurs that
 // players can choose to play.
-type Class string
+type DinoClass string
 
 const (
-	Beipiaosaurus      Class = "Beipiaosaurus"
-	Carnotaurus        Class = "Carnotaurus"
-	Ceratosaurus       Class = "Ceratosaurus"
-	Deinosuchus        Class = "Deinosuchus"
-	Diabloceratops     Class = "Diabloceratops"
-	Dilophosaurus      Class = "Dilophosaurus"
-	Dryosaurus         Class = "Dryosaurus"
-	Gallimimus         Class = "Gallimimus"
-	Herrerasaurus      Class = "Herrerasaurus"
-	Hypsilophodon      Class = "Hypsilophodon"
-	Maiasaura          Class = "Maiasaura"
-	Omniraptor         Class = "Omniraptor"
-	Pachycephalosaurus Class = "Pachycephalosaurus"
-	Pteranodon         Class = "Pteranodon"
-	Stegosaurus        Class = "Stegosaurus"
-	Tenontosaurus      Class = "Tenontosaurus"
-	Troodon            Class = "Troodon"
+	Beipiaosaurus      DinoClass = "Beipiaosaurus"
+	Carnotaurus        DinoClass = "Carnotaurus"
+	Ceratosaurus       DinoClass = "Ceratosaurus"
+	Deinosuchus        DinoClass = "Deinosuchus"
+	Diabloceratops     DinoClass = "Diabloceratops"
+	Dilophosaurus      DinoClass = "Dilophosaurus"
+	Dryosaurus         DinoClass = "Dryosaurus"
+	Gallimimus         DinoClass = "Gallimimus"
+	Herrerasaurus      DinoClass = "Herrerasaurus"
+	Hypsilophodon      DinoClass = "Hypsilophodon"
+	Maiasaura          DinoClass = "Maiasaura"
+	Omniraptor         DinoClass = "Omniraptor"
+	Pachycephalosaurus DinoClass = "Pachycephalosaurus"
+	Pteranodon         DinoClass = "Pteranodon"
+	Stegosaurus        DinoClass = "Stegosaurus"
+	Tenontosaurus      DinoClass = "Tenontosaurus"
+	Troodon            DinoClass = "Troodon"
 )
 
-var AllClasses = [17]Class{Beipiaosaurus, Carnotaurus, Ceratosaurus, Deinosuchus, Diabloceratops, Dilophosaurus, Dryosaurus, Gallimimus, Herrerasaurus, Hypsilophodon, Maiasaura, Omniraptor, Pachycephalosaurus, Pteranodon, Stegosaurus, Tenontosaurus, Troodon}
+var AllClasses = [17]DinoClass{Beipiaosaurus, Carnotaurus, Ceratosaurus, Deinosuchus, Diabloceratops, Dilophosaurus, Dryosaurus, Gallimimus, Herrerasaurus, Hypsilophodon, Maiasaura, Omniraptor, Pachycephalosaurus, Pteranodon, Stegosaurus, Tenontosaurus, Troodon}
 
 func IsClass(s string) bool {
-	c := Class(s)
+	c := DinoClass(s)
 	for _, class := range AllClasses {
 		if c == class {
 			return true
@@ -57,7 +57,7 @@ func IsClass(s string) bool {
 //
 // In case a class is not yet supported by this library, the name as
 // reported by the server will be used.
-func (c Class) Name() string {
+func (c DinoClass) Name() string {
 	return string(c)
 }
 
